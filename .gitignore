@@ -1,0 +1,8 @@
+**/jquery-1.12.4.min.js
+**/css/remixicon.css
+**/font_vintage.css
+**/animate.min.css
+
+#fonts폴더 하위 모든 파일 또는 폴더
+fonts/**
+vod/** 
