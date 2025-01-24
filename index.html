@@ -21,10 +21,20 @@
             </div>
             <ul class="main">
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT ME</a></li>
-                <li><a href="#">DESTINATION<i class="ri-arrow-down-s-line"></i></a></li>
-                <li><a href="#">PHOTOS</a></li>
-                <li><a href="#"> WORK WITH ME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li class="p-relative"><a href="#">DESTINATION<i class="ri-arrow-down-s-line"></i></a>
+                     <div class="sub">
+                        <a href="#">프랑스 파리</a>
+                        <a href="#">독일 마인츠</a>
+                        <a href="#">이태리 로마</a>
+                        <a href="#">중국 상하이</a>
+                        <a href="#">일본 오사카</a>
+                     </div>
+
+               </li>
+                <li><a href="#video">VIDEO</a></li>
+                <li><a href="#best">BEST</a></li>
+                <li><a href="#workme"> WORK WITH ME</a></li>
             </ul>
             <div class="search">
                 <a href="#"><i class="ri-search-line"></i></a>
@@ -59,7 +69,7 @@
                 <div class="col-offset-3 col-7">
                     <img src="/images/Mask group-3.png" alt="004" />
                 </div>
-           <div class="col-offset-6 col-6 hero-card">
+           <div class="col-offset-6 col-6 hero-card" id="about">
             <h1 class="vintage">Hello I'm Soony!</h1>
             <p>제3항의 승인을 얻지 못한 때에는 그 처분 또는
                 명령은 그때부터 효력을 상실한다.
@@ -101,34 +111,49 @@
     <h1 class="partner-title vintage text-center">latest video</h1>
     <a href="#" class="subscribe"><i class="ri-youtube-fill"></i> subscribe</a>
     <div class="vod d-flex">
-       <div class="vod-box">
-          <video class="myvideo">
-             <source src="vod/001.mp4" type="video/mp4">
-             웹브라우저가 video 를 인식하지 못합니다. 업그레이드 하세요.
-          </video>
-          <div class="myvideo-btn"></div>
-          <p class="text-center">Australia’s Most Beautiful<br>
-             Island on a Budget</p>
-       </div>
-       <div class="vod-box">
-          <video class="myvideo">
-             <source src="vod/002.mp4" type="video/mp4">
-             웹브라우저가 video 를 인식하지 못합니다. 업그레이드 하세요.
-          </video>
-          <div class="myvideo-btn"></div>
-          <p class="text-center">My Solo Trip to Alaska<br>
-             6-Days in Paradise</p>
-       </div>
-       <div class="vod-box">
-          <video class="myvideo">
-             <source src="vod/003.mp4" type="video/mp4">
-             웹브라우저가 video 를 인식하지 못합니다. 업그레이드 하세요.
-          </video>
-          <div class="myvideo-btn"></div>
-          <p class="text-center">Luxury Thailand Experience.<br>
-             The Perfect Getaway</p>
-       </div>
-    </div>
+      <div class="vod-box">
+         <video class="myvideo" muted>
+            <source src="vod/001.mp4" type="video/mp4">
+            웹브라우저가 video 를 인식하지 못합니다. 업그레이드 하세요.
+         </video>
+         <div class="myvideo-btn" data-vdo="001.mp4"></div>
+         <p class="text-center">Australia’s Most Beautiful<br>
+            Island on a Budget</p>
+      </div>
+      <div class="vod-box">
+         <video class="myvideo" muted>
+            <source src="vod/002.mp4" type="video/mp4">
+            웹브라우저가 video 를 인식하지 못합니다. 업그레이드 하세요.
+         </video>
+         <div class="myvideo-btn" data-vdo="002.mp4"></div>
+         <p class="text-center">My Solo Trip to Alaska<br>
+            6-Days in Paradise</p>
+      </div>
+      <div class="vod-box">
+         <video class="myvideo" muted>
+            <source src="vod/003.mp4" type="video/mp4">
+            웹브라우저가 video 를 인식하지 못합니다. 업그레이드 하세요.
+         </video>
+         <div class="myvideo-btn" data-vdo="003.mp4"></div>
+         <p class="text-center">Luxury Thailand Experience.<br>
+            The Perfect Getaway</p>
+      </div>
+   </div>
+   <!--비디오 팝업창 -->
+   <div class="vdo-popup-back" id="vdo-back">
+      <div class="vdo-popup">
+         <video controls id="viewvideo">
+            <source src="" type="video/mp4">
+         </video>
+         <div class="close">
+            <span></span>
+            <span></span>
+         </div>
+      </div>
+  </div>
+
+
+
  </section> 
  <!--best places-->
  <section class="best" id="best">
@@ -229,15 +254,28 @@
     </div>
  </section>
  <footer>
-   <nav></nav>
-   <div class="sns-box"></div>
+   <nav>
+      <ul>
+         <li><a href="#">HOME</a></li>
+         <li><a href="#">ABOUT ME</a></li>
+         <li><a href="#">DESTINATION</a></li>
+         <li><a href="#">PHOTOS</a></li>
+         <li><a href="#">WORK WITH ME</a></li>
+      </ul>
+
+   </nav>
+   <div class="sns-box">
+      <a href="#" class="sns-icon"><i class="ri-kakao-talk-fill"></i></a>
+      <a href="#" class="sns-icon"><i class="ri-instagram-fill"></i></a>
+      <a href="#" class="sns-icon"><i class="ri-twitter-x-line"></i></a>
+   </div>
    <div class="copyright">
       <p class="text-center">
          Copyleft &copy; jinjae's all copy Reserved.
       </p>
    </div>
    </div>
- </footer>
+</footer>
 </body>
 
 </html>
